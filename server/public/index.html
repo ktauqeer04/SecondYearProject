@@ -1,0 +1,577 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Search for Life</title>
+    <!-- Favicon -->
+    <link rel="icon" typ Custom properties *e="image/png" sizes="32x32" href="./assets/images/favicon.">
+    <!-- Remix icons -->
+    <link href="https://codedn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">The Search for Life</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signin.html" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signup.html" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <a href="/signin.html" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="/signup.html" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>Sign up</span>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">press ESC to close.</span>
+
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+
+    <!-- Featured articles -->
+    <section class="featured-articles section section-header-offset">
+
+        <div class="featured-articles-container container d-grid">
+
+            <div class="featured-content d-grid">
+
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking news</span>
+                    </h3>
+                    <span class="headline-description">India's Chandrayan - 3 Officially Lands on Moon's South Pole</span>
+                </div>
+
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/images/time_travel.jpg" alt="" class="article-image">
+                    <span class="article-category">Hypotheses</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>28th March 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Can you Time Travel?</h3>
+
+                    </div>
+                </a>
+
+                <a href="./post.html" class="article featured-article featured-article-2">
+                    <img src="./assets/images/alone.jpg" alt="" class="article-image">
+                    <span class="article-category">Theory</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>Dec 6th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>4 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Are we Alone in the Universe?</h3>
+
+                    </div>
+                </a>
+
+                <a href="./post.html" class="article featured-article featured-article-3">
+                    <img src="./assets/images/Pulsar.jpg" alt="" class="article-image">
+                    <span class="article-category">Physics</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>October 4th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">A Pulsar Suddenly Threw Out Radiation 200 Times More Energetic</h3>  
+
+                    </div>
+                </a>
+
+            </div>
+            
+            <div class="sidebar d-grid">
+
+                <h3 class="title featured-content-title">Trending news</h3>
+
+                <a href="#" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">01</span>
+                        <img src="./assets/images/chandrayaan-3.webp" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>23 August 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>9 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Chandrayaan-3 Officially Lands on the South Pole of the Moon </h3>
+
+                    </div>
+                </a>
+
+                <a href="#" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">02</span>
+                        <img src="./assets/images/habitableExoplanets.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>11 Septmber 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>4 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">JWST Discovers Dimethyl Sulfide in a Near-by Exoplanet K2-18 b.</h3>
+
+                    </div>
+                </a>
+
+                <a href="#" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">03</span>
+                        <img src="./assets/images/solarEclipse.webp" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>14 October 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How fast will October's annular solar eclipse travel?</h3>
+
+                    </div>
+                </a>
+
+                <a href="#" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">04</span>
+                        <img src="./assets/images/gorgeous.webp" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>11 October 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">James Webb Space Telescope spotlights gorgeous young stars in a galaxy next door</h3>
+
+                    </div>
+                </a>
+
+                <a href="#" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">05</span>
+                        <img src="./assets/images/JWST Studies.webp" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>17th April 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How James Webb Space Telescope's studies of TRAPPIST-1 flares could aid the search for alien life</h3>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Quick read -->
+    <section class="quick-read section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Quick read">Quick read</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/NASA.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>12th Feb 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">NASA’s UFO Research</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/Planets born.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>21st april 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>4 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Seeing the Moment Planets Start to Form</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/plant.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>2nd Dec 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Earth's Smallest Flowering Plant Can Handle 20X Earth's Gravity</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/galaxy.png" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>5th October 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Quenched Galaxies in the Early Universe</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/neptune.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>5ht October 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>7 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Want to Explore Neptune? Use Triton’s Atmosphere to Put on the Brakes</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/black hole.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>23 Dec 2021</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Here's What it Would Take to See a Black Hole's Photon Ring</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Older posts -->
+    <section class="older-posts section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Older posts">Older posts</h2>
+
+            <div class="older-posts-grid-wrapper d-grid">
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/gravity.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>24 Dec 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How Gravity Works?</h3>
+                        <p class="article-description">Difference between Einstein and Newton gravity is that Einstein gravity describes that gravity is a curvature in a 4-dimensional space-time fabric proportional to object masses, whereas Newton gravity describes gravity as a force expressed mutually between two objects in relation to their masses..</p>
+
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/quantum.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>23 june 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">What is Quantum Physics?</h3>
+                        <p class="article-description">Quantum physics is the study of matter and energy at the most fundamental level. It aims to uncover the properties and behaviors of the very building blocks of nature. While many quantum experiments examine very small objects, such as electrons and photons, quantum phenomena are all around us, acting on every scale.</p>
+
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/GrandUnified.jpeg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>16 july 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Einstein's Grand Unified Theory</h3>
+                        <p class="article-description">Grand unified theories describe the interactions of quarks and leptons within the same theoretical structure. This gives rise to the possibility that quarks can decay to leptons and specifically that the proton can decay. Early attempts at a GUT predicted that the proton's lifetime must be in the region of 1032 years.</p>
+
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/big bang.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>21 Sep 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Big Bang Theory</h3>
+                        <p class="article-description">Around 13.7 billion years ago, everything in the entire universe was condensed in an infinitesimally small singularity, a point of infinite denseness and heat. Suddenly, an explosive expansion began, ballooning our universe outwards faster than the speed of light.</p>
+
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/big splat.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>23 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Big Splat Theory</h3>
+                        <p class="article-description">In the far future, galaxies will eventually drift so far apart that light from one can never reach another. In fact, as stars get old and die, a time will come when there's no light — or heat — left. The universe will be a dark, cold, empty void. It sounds like the end of everything, but according to one theory, it's actually the beginning of the next universe in an endlessly repeating cycle. Remember the braneworld theory? This is what happens when one cold, empty brane collides with another — which, given enough time, it's bound to do eventually.</p>
+
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./assets/images/plasma.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>23 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Plasma Filled Cosmos</h3>
+                        <p class="article-description">Immediately after the Big Bang, the universe was much smaller and hotter, filled with a glowing plasma like the sun. We still see the end of this super-hot phase in the form of a sea of radiation filling the whole of space. The expansion of the universe over the intervening billions of years has cooled the radiation down to minus 454 degrees Fahrenheit (minus 270 degrees Celsius), but it is still detectable by radio telescopes.
+
+                            The CMB looks virtually the same in every direction, which can't be explained if the universe has always expanded at its current rate. Many scientists believe it went through a brief period of extremely rapid "inflation" a fraction of a second after the Big Bang, suddenly ballooning in size from a subatomic scale to several light-years.</p>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="see-more-container">
+                <a href="#" class="btn see-more-btn place-items-center">See more <i class="ri-arrow-right-s-line"></i></i></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular tags -->
+    <section class="popular-tags section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
+
+            <div class="popular-tags-container d-grid">
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Telescopes</span>
+                    <img src="./assets/images/JWST.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Exoplanets</span>
+                    <img src="./assets/images/exoplanets.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Technology</span>
+                    <img src="./assets/images/technology.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Organistions</span>
+                    <img src="./assets/images/organisations.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Star_Systems</span>
+                    <img src="./assets/images/star systems.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Aliens</span>
+                    <img src="./assets/images/elon.jpg" alt="" class="article-image">
+                </a>
+                
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+                <h6 class="title newsletter-title">Subscribe to The Search for Life</h6>
+                <p class="newsletter-description">If you Enjoy our Blogs so Far. Consider Subscribing and becoming a Part of the Astronomy Community</p>
+
+                <form action="" class="form">
+                    <input class="form-input" type="text" placeholder="Enter your email address">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
