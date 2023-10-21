@@ -149,6 +149,10 @@ app.use(session({
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Serve static HTML files
+app.use(express.static(__dirname + '/public'));
+
+
 // Connect to MongoDB (replace with your MongoDB connection string)
 mongoose.connect('mongodb+srv://tauqeer:UBn3CA7HMkqgPS6u@cluster0.b6qwt0v.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
@@ -166,16 +170,14 @@ const User = mongoose.model('User', userSchema);
 
 // Middleware to check if the user is authenticated
 const isAuthenticated = (req, res, next) => {
-  console.log("HII"+req.session.user);
   if (req.session.user) {
     next(); // User is authenticated, proceed
   } else {
-    res.sendFile(__dirname+'/public/signin.html'); // User is not authenticated, redirect to the sign-in page
+    res.redirect('/signin.html'); // User is not authenticated, redirect to the sign-in page
   }
 };
 
-// Serve static HTML files
-app.use(express.static(__dirname + '/public'));
+
 
 app.post('/signup', async (req, res) => {
   const name = req.body.name;
@@ -214,6 +216,7 @@ app.post('/signup', async (req, res) => {
   }
 });
 
+
 app.post('/signin', async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
@@ -232,7 +235,8 @@ app.post('/signin', async (req, res) => {
     if (passwordMatch) {
       // Set a session to indicate that the user is logged in
       req.session.user = user;
-      res.send('Sign-in successful');
+      // res.send('Sign-in successful');
+      res.redirect('/main.html');
     } else {
       res.status(401).send('Invalid email or password');
     }
@@ -241,9 +245,35 @@ app.post('/signin', async (req, res) => {
   }
 });
 
-app.use('/', isAuthenticated, (req, res) => {
+
+
+// Add a route for sign-out
+app.get('/signout', (req, res) => {
+  // Clear the user's session to log them out
+  req.session.destroy((err) => {
+    if (err) {
+      console.error('Error while logging out:', err);
+    }
+    // Redirect the user to the sign-in page or any other appropriate page
+    res.redirect('/signin.html');
+  });
+});
+
+
+
+// app.get('/main.html', isAuthenticated, (req, res) => {
+//   // This route serves the 'main.html' file
+//   res.sendFile(__dirname + '/public/main.html');
+// });
+
+
+app.get('/', isAuthenticated, (req, res) => {
   // Render the main page (only accessible when the user is signed in)
-  res.sendFile(__dirname + '/public/index.html');
+  res.setHeader('Content-Disposition', 'attachment; filename="main.html"');
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.sendFile(__dirname + '/public/main.html');
 });
 
 
