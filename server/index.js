@@ -210,7 +210,9 @@ app.post('/signup', async (req, res) => {
     });
 
     await newUser.save();
-    res.send('Signup successful');
+    // res.send('Signup successful');
+    res.redirect('/signin.html');
+
   } catch (error) {
     res.status(500).send('Error while saving user');
   }
